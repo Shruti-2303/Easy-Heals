@@ -1,5 +1,15 @@
+import HeroFormFold from "./components/HeroFormFold";
+import Navbar from "./components/Navbar";
+import ServicesFold from "./components/ServicesFold";
+
 function App() {
-  return <div className="text-3xl font-bold underline">Easy Heals</div>;
+  return (
+    <div>
+      <Navbar />
+      <HeroFormFold />
+      <ServicesFold />
+    </div>
+  );
 }
 
 export default App;
