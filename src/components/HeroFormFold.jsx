@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeroFormFold = () => {
   return (
     <div className="items-center">

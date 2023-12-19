@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import HeroFormFold from "./components/HeroFormFold";
 import Navbar from "./components/Navbar";
 import ServicesFold from "./components/ServicesFold";
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <HeroFormFold />
       <ServicesFold />
+      <Footer />
     </div>
   );
 }

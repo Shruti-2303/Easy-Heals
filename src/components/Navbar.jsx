@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../assets/easyHealsLogo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = () => {

@@ -1,5 +1,3 @@
-import React from "react";
-
 const ServiceCard = ({ info }) => {
   const { image, contact, message, description } = info;
   return (

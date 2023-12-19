@@ -1,4 +1,3 @@
-import React from "react";
 import ServiceCard from "./ServiceCard";
 import customerIcon from "../assets/customer-care.png";
 import mailIcon from "../assets/mail.png";
@@ -27,9 +26,9 @@ const ServiceCardContainer = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 sm:flex-row">
       {serviceInfo.map((info) => {
-        return <ServiceCard info={info} />;
+        return <ServiceCard key={info.message} info={info} />;
       })}
     </div>
   );
