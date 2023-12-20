@@ -7,24 +7,31 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
   return (
-    <div className="flex justify-between items-center shadow-lg px-5 w-full">
-      <div className="w-32 h-10 mt-3">
+    <div className="flex justify-between items-center shadow-md px-5 w-full sm:px-10">
+      <div className="w-32 h-10 mt-3 my-2 flex items-center">
         <img src={logo} />
+      </div>
+      <div className="hidden sm:flex gap-10 text-sm">
+        <span>About Us</span>
+        <span>Services</span>
+        <span>Doctors</span>
+        <span>Hospitals</span>
+        <span>
+          <button>Search</button>
+        </span>
       </div>
       <div className="sm:hidden" onClick={handleMenu}>
         <RxHamburgerMenu />
       </div>
       {showMenu && (
         <div className="flex flex-col absolute top-12 left-0 bg-white w-full p-5 shadow-lg">
-          <ul>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Doctors</li>
-            <li>Hospitals</li>
-            <li>
-              <button>Search</button>
-            </li>
-          </ul>
+          <span>About Us</span>
+          <span>Services</span>
+          <span>Doctors</span>
+          <span>Hospitals</span>
+          <span>
+            <button>Search</button>
+          </span>
         </div>
       )}
     </div>
